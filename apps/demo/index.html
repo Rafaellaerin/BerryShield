@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BerryShield Demo</title>
+  <style>
+    :root { color-scheme: dark; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #090d16; color: #f8fafc; }
+    main { width: min(92vw, 720px); padding: 32px; border: 1px solid #283548; border-radius: 20px; background: #101827; box-shadow: 0 24px 70px #0008; }
+    h1 { margin: 0 0 8px; } p { color: #b8c3d1; line-height: 1.55; }
+    button { padding: 12px 18px; border: 0; border-radius: 10px; font-weight: 750; cursor: pointer; background: #e11d48; color: white; }
+    pre { overflow:auto; padding:16px; border-radius:12px; background:#070b12; border:1px solid #253247; min-height:80px; white-space:pre-wrap; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>🍓 BerryShield</h1>
+  <p>Demo do fluxo adaptativo. O token exibido abaixo é apenas para desenvolvimento; em uma aplicação real ele deve ser enviado ao backend e verificado em <code>/v1/siteverify</code>.</p>
+  <button id="verify">Executar verificação</button>
+  <pre id="result" aria-live="polite">Pronto.</pre>
+</main>
+<script type="module">
+  import { BerryShield } from "/sdk/index.js";
+  const out = document.querySelector("#result");
+  const button = document.querySelector("#verify");
+  const shield = new BerryShield({ siteKey: "bs_dev_public", endpoint: "http://localhost:8080", wasmProbeUrl: "/probe.wasm" });
+  button.addEventListener("click", async () => {
+    button.disabled = true; out.textContent = "Verificando…";
+    try { const token = await shield.execute("demo"); out.textContent = `Token emitido:\n${token}`; }
+    catch (e) { out.textContent = `Falha: ${e instanceof Error ? e.message : String(e)}`; }
+    finally { button.disabled = false; }
+  });
+</script>
+</body>
+</html>

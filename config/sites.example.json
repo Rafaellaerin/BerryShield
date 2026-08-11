@@ -1,0 +1,12 @@
+[
+  {
+    "site_key": "bs_example_public",
+    "secret": "replace-with-a-long-random-server-secret",
+    "hostnames": ["example.com", "www.example.com"],
+    "token_ttl_seconds": 120,
+    "challenge_ttl_seconds": 180,
+    "rate_limit_per_minute": 60,
+    "bind_ip_prefix": false,
+    "thresholds": {"pow": 30, "interactive": 62, "block": 92}
+  }
+]

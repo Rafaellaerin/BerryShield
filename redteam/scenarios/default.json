@@ -1,0 +1,6 @@
+[
+  {"id":"RT-01","name":"webdriver exposed","mutations":{"webdriver":true},"expect_not":"allow"},
+  {"id":"RT-02","name":"headless user agent","server_user_agent":"HeadlessChrome/131","mutations":{"user_agent":"HeadlessChrome/131"},"expect_not":"allow"},
+  {"id":"RT-03","name":"platform contradiction","headers":{"Sec-CH-UA-Platform":"\"Linux\""},"mutations":{"platform":"Win32"},"expect_one_of":["allow","pow","interactive"]},
+  {"id":"RT-13","name":"impossible pointer density","behavior":{"dwell_ms":100,"pointer_events":9000},"expect_one_of":["allow","pow","interactive","block"]}
+]

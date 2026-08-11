@@ -1,0 +1,54 @@
+services:
+  reputation:
+    build: ./services/reputation
+    environment:
+      REPUTATION_PORT: "8081"
+      ABUSEIPDB_API_KEY: ${ABUSEIPDB_API_KEY:-}
+      IPQS_API_KEY: ${IPQS_API_KEY:-}
+      MAXMIND_ACCOUNT_ID: ${MAXMIND_ACCOUNT_ID:-}
+      MAXMIND_LICENSE_KEY: ${MAXMIND_LICENSE_KEY:-}
+    expose: ["8081"]
+    read_only: true
+    tmpfs: ["/tmp"]
+    security_opt: ["no-new-privileges:true"]
+
+  risk-engine:
+    build: ./services/risk-engine
+    environment:
+      RISK_ENGINE_ADDR: 0.0.0.0:8082
+      RUST_LOG: info
+    expose: ["8082"]
+    read_only: true
+    tmpfs: ["/tmp"]
+    security_opt: ["no-new-privileges:true"]
+
+  gateway:
+    build: ./services/gateway
+    depends_on: [reputation, risk-engine]
+    ports: ["8080:8080"]
+    environment:
+      BERRYSHIELD_ENV: ${BERRYSHIELD_ENV:-development}
+      BERRYSHIELD_ADDR: :8080
+      BERRYSHIELD_SIGNING_SECRET: ${BERRYSHIELD_SIGNING_SECRET}
+      BERRYSHIELD_SIGNING_KID: ${BERRYSHIELD_SIGNING_KID:-dev-v1}
+      BERRYSHIELD_PREVIOUS_SIGNING_KEYS_JSON: ${BERRYSHIELD_PREVIOUS_SIGNING_KEYS_JSON:-}
+      BERRYSHIELD_BINDING_SECRET: ${BERRYSHIELD_BINDING_SECRET:-}
+      BERRYSHIELD_SITE_KEY: ${BERRYSHIELD_SITE_KEY:-bs_dev_public}
+      BERRYSHIELD_SITE_SECRET: ${BERRYSHIELD_SITE_SECRET:-bs_dev_secret_change_me}
+      BERRYSHIELD_ALLOWED_HOSTS: ${BERRYSHIELD_ALLOWED_HOSTS:-localhost,127.0.0.1}
+      BERRYSHIELD_BIND_IP_PREFIX: ${BERRYSHIELD_BIND_IP_PREFIX:-false}
+      BERRYSHIELD_TRUSTED_PROXY_CIDRS: ${BERRYSHIELD_TRUSTED_PROXY_CIDRS:-}
+      BERRYSHIELD_REPUTATION_URL: http://reputation:8081
+      BERRYSHIELD_RISK_ENGINE_URL: http://risk-engine:8082
+    read_only: true
+    tmpfs: ["/tmp"]
+    security_opt: ["no-new-privileges:true"]
+
+  demo:
+    build:
+      context: .
+      dockerfile: apps/demo/Dockerfile
+    ports: ["3000:80"]
+    read_only: true
+    tmpfs: ["/var/cache/nginx", "/var/run"]
+    security_opt: ["no-new-privileges:true"]

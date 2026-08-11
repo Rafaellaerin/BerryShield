@@ -1,0 +1,2247 @@
+[
+  {
+    "file": "nopecha.com.har",
+    "entries": 38,
+    "parse": "json",
+    "hosts": [
+      [
+        "00480ef49626.3058fb77.sa-east-1.token.awswaf.com",
+        23
+      ],
+      [
+        "00480ef49626.3058fb77.sa-east-1.captcha.awswaf.com",
+        6
+      ],
+      [
+        "static.captcha.awswaf.com",
+        4
+      ],
+      [
+        "nopecha.com",
+        2
+      ],
+      [
+        "hiring.amazon.ca",
+        2
+      ],
+      [
+        "static.cloudflareinsights.com",
+        1
+      ]
+    ],
+    "routes": [
+      {
+        "method": "POST",
+        "host": "00480ef49626.3058fb77.sa-east-1.token.awswaf.com",
+        "path": "/00480ef49626/2d23d0e4897d/07353deb5ad1/report",
+        "count": 8,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "POST",
+        "host": "00480ef49626.3058fb77.sa-east-1.token.awswaf.com",
+        "path": "/00480ef49626/2d23d0e4897d/07353deb5ad1/telemetry",
+        "count": 8,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "00480ef49626.3058fb77.sa-east-1.captcha.awswaf.com",
+        "path": "/00480ef49626/2d23d0e4897d/07353deb5ad1/captcha.js",
+        "count": 2,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "00480ef49626.3058fb77.sa-east-1.captcha.awswaf.com",
+        "path": "/00480ef49626/2d23d0e4897d/07353deb5ad1/problem",
+        "count": 2,
+        "query_fields": [
+          "domain",
+          "kind",
+          "locale"
+        ],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "POST",
+        "host": "00480ef49626.3058fb77.sa-east-1.captcha.awswaf.com",
+        "path": "/00480ef49626/2d23d0e4897d/07353deb5ad1/verify",
+        "count": 2,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "00480ef49626.3058fb77.sa-east-1.token.awswaf.com",
+        "path": "/00480ef49626/2d23d0e4897d/07353deb5ad1/challenge.js",
+        "count": 2,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "00480ef49626.3058fb77.sa-east-1.token.awswaf.com",
+        "path": "/00480ef49626/2d23d0e4897d/07353deb5ad1/inputs",
+        "count": 2,
+        "query_fields": [
+          "client"
+        ],
+        "post_fields": [],
+        "response_shape": [
+          "challenge",
+          "challenge.hmac",
+          "challenge.input",
+          "challenge.region",
+          "challenge_type",
+          "difficulty"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "00480ef49626.3058fb77.sa-east-1.token.awswaf.com",
+        "path": "/00480ef49626/2d23d0e4897d/07353deb5ad1/mp_verify",
+        "count": 2,
+        "query_fields": [],
+        "post_fields": [
+          "solution_data",
+          "solution_metadata"
+        ],
+        "response_shape": [
+          "inputs",
+          "token"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "hiring.amazon.ca",
+        "path": "/application/api/candidate-application/update-application",
+        "count": 2,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.captcha.awswaf.com",
+        "path": "/fonts/AmazonEmberLt/AmazonEmber-Light.woff2",
+        "count": 2,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.captcha.awswaf.com",
+        "path": "/fonts/AmazonEmberLt/stylesheet.css",
+        "count": 2,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "POST",
+        "host": "00480ef49626.3058fb77.sa-east-1.token.awswaf.com",
+        "path": "/00480ef49626/2d23d0e4897d/07353deb5ad1/voucher",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "nopecha.com",
+        "path": "/captcha/awscaptcha",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "nopecha.com",
+        "path": "/favicon.ico",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.cloudflareinsights.com",
+        "path": "/beacon.min.js/<opaque>",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      }
+    ],
+    "categorical": {},
+    "notes": []
+  },
+  {
+    "file": "nopecha-geetest.com.har",
+    "entries": 13,
+    "parse": "json",
+    "hosts": [
+      [
+        "static.geetest.com",
+        7
+      ],
+      [
+        "nopecha.com",
+        3
+      ],
+      [
+        "gcaptcha4.geetest.com",
+        2
+      ],
+      [
+        "static.cloudflareinsights.com",
+        1
+      ]
+    ],
+    "routes": [
+      {
+        "method": "GET",
+        "host": "gcaptcha4.geetest.com",
+        "path": "/load",
+        "count": 1,
+        "query_fields": [
+          "callback",
+          "captcha_id",
+          "challenge",
+          "client_type",
+          "lang",
+          "risk_type"
+        ],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "gcaptcha4.geetest.com",
+        "path": "/verify",
+        "count": 1,
+        "query_fields": [
+          "callback",
+          "captcha_id",
+          "client_type",
+          "lot_number",
+          "payload",
+          "payload_protocol",
+          "process_token",
+          "pt",
+          "risk_type",
+          "w"
+        ],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "nopecha.com",
+        "path": "/captcha/geetest",
+        "count": 1,
+        "query_fields": [
+          "nocache"
+        ],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "nopecha.com",
+        "path": "/favicon.ico",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "nopecha.com",
+        "path": "/js/lib/gt4-v4.2.0.js",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.cloudflareinsights.com",
+        "path": "/beacon.min.js/<opaque>",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/captcha_v4/e70fbf1d77/slide/4b268eea89/2022-04-21T09/bg/<opaque>.png",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/captcha_v4/e70fbf1d77/slide/4b268eea89/2022-04-21T09/slice/<opaque>.png",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/v4/gct/gct4.5a2e755576738ba0499d714db4f1c9e0.js",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/v4/static/v1.9.6-1db46d/css/gcaptcha4.css",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/v4/static/v1.9.6-1db46d/css/sprite.png",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/v4/static/v1.9.6-1db46d/i18n/eng.js",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/v4/static/v1.9.6-1db46d/js/gcaptcha4.js",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      }
+    ],
+    "categorical": {
+      "client_type": [
+        "web"
+      ],
+      "risk_type": [
+        "slide"
+      ]
+    },
+    "notes": []
+  },
+  {
+    "file": "nopecha-geetest1.com.har",
+    "entries": 30,
+    "parse": "json",
+    "hosts": [
+      [
+        "static.geetest.com",
+        17
+      ],
+      [
+        "gcaptcha4.geetest.com",
+        11
+      ],
+      [
+        "translation.opera-api.com",
+        2
+      ]
+    ],
+    "routes": [
+      {
+        "method": "GET",
+        "host": "gcaptcha4.geetest.com",
+        "path": "/verify",
+        "count": 6,
+        "query_fields": [
+          "callback",
+          "captcha_id",
+          "client_type",
+          "lot_number",
+          "payload",
+          "payload_protocol",
+          "process_token",
+          "pt",
+          "risk_type",
+          "w"
+        ],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "gcaptcha4.geetest.com",
+        "path": "/load",
+        "count": 5,
+        "query_fields": [
+          "callback",
+          "captcha_id",
+          "client_type",
+          "lang",
+          "lot_number",
+          "payload",
+          "payload_protocol",
+          "process_token",
+          "pt",
+          "risk_type"
+        ],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/nerualpic/v4_test/v4_match_test/3d/3Dicon1.png",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/nerualpic/v4_test/v4_match_test/3d/3Dicon2.png",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/nerualpic/v4_test/v4_match_test/3d/3Dicon3.png",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/nerualpic/v4_test/v4_match_test/3d/3Dicon4.png",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/nerualpic/v4_test/v4_match_test/3d/3Dicon5.png",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/nerualpic/v4_test/v4_match_test/3d/3Dicon6.png",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/nerualpic/v4_test/v4_match_test/emoji/emoji2.png",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/nerualpic/v4_test/v4_match_test/emoji/emoji3.png",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/nerualpic/v4_test/v4_match_test/emoji/emoji4.png",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/nerualpic/v4_test/v4_match_test/emoji/emoji5.png",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/nerualpic/v4_test/v4_match_test/emoji/emoji6.png",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/nerualpic/v4_test/v4_match_test/robot/robot_emoji_01.png",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/nerualpic/v4_test/v4_match_test/robot/robot_emoji_02.png",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/nerualpic/v4_test/v4_match_test/robot/robot_emoji_04.png",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/nerualpic/v4_test/v4_match_test/robot/robot_emoji_05.png",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/nerualpic/v4_test/v4_match_test/robot/robot_emoji_06.png",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/v4/static/v1.9.6-1db46d/css/boom.gif",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "POST",
+        "host": "translation.opera-api.com",
+        "path": "/api/translate",
+        "count": 1,
+        "query_fields": [
+          "country",
+          "id",
+          "product",
+          "target"
+        ],
+        "post_fields": [
+          "q",
+          "target"
+        ],
+        "response_shape": [
+          "detectedSourceLanguage",
+          "sourceText",
+          "translatedText"
+        ]
+      },
+      {
+        "method": "OPTIONS",
+        "host": "translation.opera-api.com",
+        "path": "/api/translate",
+        "count": 1,
+        "query_fields": [
+          "country",
+          "id",
+          "product",
+          "target"
+        ],
+        "post_fields": [],
+        "response_shape": []
+      }
+    ],
+    "categorical": {
+      "client_type": [
+        "web"
+      ],
+      "risk_type": [
+        "match"
+      ]
+    },
+    "notes": []
+  },
+  {
+    "file": "nopecha-geetest2.com.har",
+    "entries": 2,
+    "parse": "json",
+    "hosts": [
+      [
+        "static.geetest.com",
+        1
+      ],
+      [
+        "gcaptcha4.geetest.com",
+        1
+      ]
+    ],
+    "routes": [
+      {
+        "method": "GET",
+        "host": "gcaptcha4.geetest.com",
+        "path": "/verify",
+        "count": 1,
+        "query_fields": [
+          "callback",
+          "captcha_id",
+          "client_type",
+          "lot_number",
+          "payload",
+          "payload_protocol",
+          "process_token",
+          "pt",
+          "risk_type",
+          "w"
+        ],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/captcha_v4/policy/<opaque>/icon/292545/2026-08-11T13/<opaque>.jpg",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      }
+    ],
+    "categorical": {
+      "client_type": [
+        "web"
+      ],
+      "risk_type": [
+        "icon"
+      ]
+    },
+    "notes": []
+  },
+  {
+    "file": "nopecha-geetest3.com.har",
+    "entries": 20,
+    "parse": "json",
+    "hosts": [
+      [
+        "static.geetest.com",
+        14
+      ],
+      [
+        "nopecha.com",
+        3
+      ],
+      [
+        "gcaptcha4.geetest.com",
+        2
+      ],
+      [
+        "static.cloudflareinsights.com",
+        1
+      ]
+    ],
+    "routes": [
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/nerualpic/v4_test/v4_winlinze_test/img_winlinze_1.png",
+        "count": 2,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/nerualpic/v4_test/v4_winlinze_test/img_winlinze_2.png",
+        "count": 2,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/nerualpic/v4_test/v4_winlinze_test/img_winlinze_3.png",
+        "count": 2,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/nerualpic/v4_test/v4_winlinze_test/img_winlinze_4.png",
+        "count": 2,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "gcaptcha4.geetest.com",
+        "path": "/load",
+        "count": 1,
+        "query_fields": [
+          "callback",
+          "captcha_id",
+          "challenge",
+          "client_type",
+          "lang",
+          "risk_type"
+        ],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "gcaptcha4.geetest.com",
+        "path": "/verify",
+        "count": 1,
+        "query_fields": [
+          "callback",
+          "captcha_id",
+          "client_type",
+          "lot_number",
+          "payload",
+          "payload_protocol",
+          "process_token",
+          "pt",
+          "risk_type",
+          "w"
+        ],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "nopecha.com",
+        "path": "/captcha/geetest",
+        "count": 1,
+        "query_fields": [
+          "nocache"
+        ],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "nopecha.com",
+        "path": "/favicon.ico",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "nopecha.com",
+        "path": "/js/lib/gt4-v4.2.0.js",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.cloudflareinsights.com",
+        "path": "/beacon.min.js/<opaque>",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/nerualpic/v4_test/v4_winlinze_test/img_winlinze_0.png",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/v4/gct/gct4.5a2e755576738ba0499d714db4f1c9e0.js",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/v4/static/v1.9.6-1db46d/css/gcaptcha4.css",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/v4/static/v1.9.6-1db46d/css/sprite.png",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/v4/static/v1.9.6-1db46d/i18n/eng.js",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/v4/static/v1.9.6-1db46d/js/gcaptcha4.js",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      }
+    ],
+    "categorical": {
+      "client_type": [
+        "web"
+      ],
+      "risk_type": [
+        "winlinze"
+      ]
+    },
+    "notes": []
+  },
+  {
+    "file": "nopecha-geetest4.com.har",
+    "entries": 14,
+    "parse": "json",
+    "hosts": [
+      [
+        "static.geetest.com",
+        8
+      ],
+      [
+        "nopecha.com",
+        3
+      ],
+      [
+        "gcaptcha4.geetest.com",
+        2
+      ],
+      [
+        "static.cloudflareinsights.com",
+        1
+      ]
+    ],
+    "routes": [
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/captcha_v4/policy/<opaque>/nine/292551/2026-08-11T13/<opaque>.jpg",
+        "count": 2,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "gcaptcha4.geetest.com",
+        "path": "/load",
+        "count": 1,
+        "query_fields": [
+          "callback",
+          "captcha_id",
+          "challenge",
+          "client_type",
+          "lang",
+          "risk_type"
+        ],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "gcaptcha4.geetest.com",
+        "path": "/verify",
+        "count": 1,
+        "query_fields": [
+          "callback",
+          "captcha_id",
+          "client_type",
+          "lot_number",
+          "payload",
+          "payload_protocol",
+          "process_token",
+          "pt",
+          "risk_type",
+          "w"
+        ],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "nopecha.com",
+        "path": "/captcha/geetest",
+        "count": 1,
+        "query_fields": [
+          "nocache"
+        ],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "nopecha.com",
+        "path": "/favicon.ico",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "nopecha.com",
+        "path": "/js/lib/gt4-v4.2.0.js",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.cloudflareinsights.com",
+        "path": "/beacon.min.js/<opaque>",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/nerualpic/v4_pic/nine_prompt/<opaque>.png",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/v4/gct/gct4.5a2e755576738ba0499d714db4f1c9e0.js",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/v4/static/v1.9.6-1db46d/css/gcaptcha4.css",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/v4/static/v1.9.6-1db46d/css/sprite.png",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/v4/static/v1.9.6-1db46d/i18n/eng.js",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.geetest.com",
+        "path": "/v4/static/v1.9.6-1db46d/js/gcaptcha4.js",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      }
+    ],
+    "categorical": {
+      "client_type": [
+        "web"
+      ],
+      "risk_type": [
+        "nine"
+      ]
+    },
+    "notes": []
+  },
+  {
+    "file": "nopecha-hcaptcha.com.har",
+    "entries": 30,
+    "parse": "json",
+    "hosts": [
+      [
+        "api.hcaptcha.com",
+        11
+      ],
+      [
+        "imgs3.hcaptcha.com",
+        6
+      ],
+      [
+        "newassets.hcaptcha.com",
+        5
+      ],
+      [
+        "nopecha.com",
+        4
+      ],
+      [
+        "js.hcaptcha.com",
+        1
+      ],
+      [
+        "static.cloudflareinsights.com",
+        1
+      ],
+      [
+        "6ac26cb54e47.w.hcaptcha.com",
+        1
+      ],
+      [
+        "35e74101033b.w.hcaptcha.com",
+        1
+      ]
+    ],
+    "routes": [
+      {
+        "method": "GET",
+        "host": "imgs3.hcaptcha.com",
+        "path": "/tip/<opaque>/<opaque>.jpeg",
+        "count": 6,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "POST",
+        "host": "api.hcaptcha.com",
+        "path": "/getcaptcha/<opaque>",
+        "count": 3,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": [
+          "c",
+          "c.req",
+          "c.type",
+          "key",
+          "normalized",
+          "oby",
+          "request_config",
+          "request_config.answer_type",
+          "request_config.cr_ss",
+          "request_config.ignore_case",
+          "request_config.keep_answers_order",
+          "request_config.max_length",
+          "request_config.max_points",
+          "request_config.max_shapes_per_image",
+          "request_config.max_value",
+          "request_config.min_length",
+          "request_config.min_points",
+          "request_config.min_shapes_per_image",
+          "request_config.min_value",
+          "request_config.minimum_selection_area_per_shape",
+          "request_config.multiple_choice_max_choices",
+          "request_config.multiple_choice_min_choices",
+          "request_config.new_translation",
+          "request_config.overlap_threshold",
+          "request_config.restrict_to_coords",
+          "request_config.shape_type",
+          "request_config.sig_figs",
+          "request_config.tolerance",
+          "request_config.translation_mode",
+          "request_config.version",
+          "request_config.vlas",
+          "request_type",
+          "requester_question",
+          "requester_question.en",
+          "requester_question.pt-BR",
+          "requester_restricted_answer_set",
+          "requester_restricted_answer_set.default",
+          "requester_restricted_answer_set.default.en",
+          "tasklist",
+          "tasklist[].datapoint_uri",
+          "tasklist[].entities",
+          "tasklist[].task_key",
+          "tjf"
+        ]
+      },
+      {
+        "method": "OPTIONS",
+        "host": "api.hcaptcha.com",
+        "path": "/getcaptcha/<opaque>",
+        "count": 3,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "POST",
+        "host": "api.hcaptcha.com",
+        "path": "/checkcaptcha/<opaque>/<opaque>",
+        "count": 2,
+        "query_fields": [],
+        "post_fields": [
+          "answers",
+          "c",
+          "clientOptions",
+          "e",
+          "job_mode",
+          "motionData",
+          "n",
+          "pdc",
+          "serverdomain",
+          "sitekey",
+          "v",
+          "ws"
+        ],
+        "response_shape": [
+          "c",
+          "c.req",
+          "c.type",
+          "expiration",
+          "generated_pass_UUID",
+          "pass"
+        ]
+      },
+      {
+        "method": "OPTIONS",
+        "host": "api.hcaptcha.com",
+        "path": "/checkcaptcha/<opaque>/<opaque>",
+        "count": 2,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "newassets.hcaptcha.com",
+        "path": "/captcha/v1/<opaque>/static/hcaptcha.html",
+        "count": 2,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "35e74101033b.w.hcaptcha.com",
+        "path": "/logo.png",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "6ac26cb54e47.w.hcaptcha.com",
+        "path": "/logo.png",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "POST",
+        "host": "api.hcaptcha.com",
+        "path": "/checksiteconfig",
+        "count": 1,
+        "query_fields": [
+          "host",
+          "sc",
+          "sitekey",
+          "spst",
+          "swa",
+          "v"
+        ],
+        "post_fields": [],
+        "response_shape": [
+          "c",
+          "c.req",
+          "c.type",
+          "features",
+          "features.enc_get_req",
+          "pass"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "js.hcaptcha.com",
+        "path": "/1/api.js",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "newassets.hcaptcha.com",
+        "path": "/c/<opaque>/hsw.js",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "newassets.hcaptcha.com",
+        "path": "/captcha/v1/<opaque>/challenge/image_label_area_select/challenge.js",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "newassets.hcaptcha.com",
+        "path": "/captcha/v1/<opaque>/static/i18n/pt-BR.json",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": [
+          "'I am human' is now checked. You are verified",
+          "'I am human', Select in order to trigger the challenge, or to bypass it if you have an accessibility cookie",
+          "A new SMS will open with a one time code for you to send.",
+          "About hCaptcha & Accessibility Options",
+          "Accessibility",
+          "Accessibility Challenge",
+          "Accessibility Cookie",
+          "Accessibility cookie is not set. {{retrieve-cookie}}",
+          "Accessibility cookie is set. For help, please email {{support}}",
+          "Accessibility: Retrieve Cookie",
+          "Back",
+          "Back to previous verification option",
+          "Brand",
+          "Can't Click",
+          "Can't Solve",
+          "Cancel",
+          "Cancel Navigation",
+          "Cancel Response",
+          "Cannot contact hCaptcha. Check your connection and try again.",
+          "Challenge Image {{id}}",
+          "Challenge Text Input",
+          "Challenge refreshed.",
+          "Check",
+          "Check mark",
+          "Close",
+          "Close Modal",
+          "Code",
+          "Confirm",
+          "Confirm Code",
+          "Confirm Navigation",
+          "Confirming code {{code}}",
+          "Cookies are disabled or the accessibility cookie is not set. {{enable-cookies}}",
+          "Copied",
+          "Copy Code",
+          "Copy Phone Number",
+          "Copy phone number: {{phone}}",
+          "Copy verification code: {{code}}",
+          "Couldn't verify the code, please try again",
+          "Describe why you are reporting an image.",
+          "Didn't get the code?",
+          "Display hCaptcha Accessibility Challenge",
+          "Display hCaptcha Visual Challenge",
+          "Drag the item",
+          "Email",
+          "Enable cross-site cookies.",
+          "Enter code",
+          "Enter the two words in the image.",
+          "Enter verification code",
+          "Enter your email address",
+          "Enter your phone number",
+          "Error fetching captcha.",
+          "Error submitting captcha.",
+          "Example image {{id}}",
+          "Feedback",
+          "Having a problem?",
+          "Hide examples.",
+          "Hold an item to unlock",
+          "Hold to unlock",
+          "I am human",
+          "If there are None, click Skip",
+          "Image-based CAPTCHA challenge. Please use the 'Accessibility: Retrieve Cookie' or 'Accessibility: Text Challenge' options if available in the challenge menu.",
+          "Inappropriate",
+          "Info",
+          "Information",
+          "Information About hCaptcha",
+          "Information about hCaptcha's accessibility options.",
+          "Information about the hCaptcha service.",
+          "Invalid challenge.",
+          "Invalid email address",
+          "Invalid phone number",
+          "Learn about accessibility options.",
+          "Learn more about hCaptcha Accessibility.",
+          "Learn more about hCaptcha Accessibility. Opens in a new tab.",
+          "Loading",
+          "Locked",
+          "Move",
+          "Multiple Choice Option",
+          "New Challenge",
+          "Next",
+          "Next Challenge",
+          "Next Challenge, page {{current}} of {{total}}",
+          "No SMS received yet, please retry",
+          "Off Screen",
+          "Only SMS is supported, do not use WhatsApp.",
+          "Open SMS",
+          "Open SMS with verification code. Send the message, then return and press Confirm.",
+          "Other",
+          "Our accessibility option may help",
+          "Our accessibility option may help.",
+          "Phone",
+          "Phone number copied to clipboard",
+          "Please also try turning off your ad blocker. Our accessibility option may help.",
+          "Please also try turning off your ad blocker.‍",
+          "Please describe your issue.",
+          "Please enter a valid code",
+          "Please enter your email to receive a verification code.",
+          "Please provide your phone number to generate a verification code.",
+          "Please select Confirm to follow the link, or Cancel to stay on the current screen.",
+          "Please select an image to report.",
+          "Please select an option to send response.",
+          "Please try again.",
+          "Press and hold to zoom. {{icon}}",
+          "Privacy",
+          "Provide Feedback.",
+          "Provide details",
+          "Provide feedback for hCaptcha.",
+          "QR Code",
+          "QR code to open SMS app with verification message pre-filled. Press 'Show Details' button below for alternative method.",
+          "Rate limited or network error. Please retry.",
+          "Refresh Challenge.",
+          "Report",
+          "Report Bug",
+          "Report Bug to hCaptcha",
+          "Report Image",
+          "Report Image to hCaptcha",
+          "Reporting a functionality issue?",
+          "Reporting a functionality issue? See how to report issues with detailed logs.",
+          "Resend",
+          "Resend code is now available.",
+          "Resend verification code",
+          "Resend verification code. Available after timer completes.",
+          "Reset zoom",
+          "Retrieve accessibility cookie.",
+          "Retrieve accessibility cookie. Opens in a new tab.",
+          "Return to the app and press Confirm after sending this message. Do not edit or share the code: {{code}}",
+          "Scan QR code",
+          "See how to report issues with detailed logs.",
+          "Select a country code. Currently selected {{cc}}",
+          "Select a language",
+          "Select {{icon}} to enable Zoom.",
+          "Send",
+          "Send Response",
+          "Send To",
+          "Send Us Feedback",
+          "Send code via SMS",
+          "Send prefilled message",
+          "Send this code to the phone number below.",
+          "Show Details",
+          "Show Details. Get verification code and phone number to copy manually",
+          "Sign up for accessibility access to bypass the hCaptcha challenge.",
+          "Skip",
+          "Skip Challenge",
+          "Skip Challenge, page {{current}} of {{total}}",
+          "Software Bug",
+          "Sorry to hear that!",
+          "Standard SMS rates may apply.",
+          "Status:",
+          "Submit Email",
+          "Tell Us Why",
+          "Terms",
+          "Thank you for your feedback.",
+          "The sitekey for this hCaptcha is incorrect. Please contact the site admin if you see this.",
+          "This hCaptcha is for testing only. Please contact the site admin if you see this.",
+          "This lets you avoid future questions by registering and setting a cookie.",
+          "This organization has been flagged for violating hCaptcha's terms of service, [learn more](https://www.hcaptcha.com/service-abuse-information).",
+          "To bypass our visual challenge, we offer an accessibility cookie.",
+          "Too Difficult",
+          "Verification code copied to clipboard",
+          "Verification code: {{text}}",
+          "Verify Answers",
+          "Verify Phone Number",
+          "Verify it's you. Get verification code, then hit **Confirm**.",
+          "Verify it's you. Get verification code, then hit Confirm.",
+          "Verify it's you. Input your mobile number, send SMS then Confirm",
+          "Verify it's you. Send SMS, then hit Confirm.",
+          "Verify it’s you. Send SMS, then hit **Confirm**.",
+          "View more examples.",
+          "Violent",
+          "Visit this menu entry to open a visual challenge.",
+          "We will look into the issue immediately.",
+          "We'll resolve your issue as quickly as we can.",
+          "We've sent a 6-digit to your email. Please enter it below to verify your identity.",
+          "Widget containing checkbox for hCaptcha security challenge",
+          "Your computer or network has sent too many requests.",
+          "Zoom in",
+          "Zoom out",
+          "collapsed",
+          "expanded",
+          "hCaptcha Privacy Policy, opens in a new tab",
+          "hCaptcha Terms of Service, opens in a new tab",
+          "hCaptcha challenge",
+          "hCaptcha is a service that reduces bots and spam by asking simple questions. Please follow the instructions at the top of the screen for each challenge. For more info visit",
+          "hCaptcha is a service that reduces bots and spam by asking simple questions. Please follow the instructions at the top of the screen for each challenge. For more information visit {{site-url}}",
+          "hCaptcha logo, opens new window with more information",
+          "hCaptcha security token has expired. Please complete the challenge again.",
+          "hCaptcha window closed due to timeout.",
+          "hcaptcha.com. Opens in a new tab.",
+          "widget error message text",
+          "widget warning message text",
+          "{{locale}} - {{language}}, Select a language"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "nopecha.com",
+        "path": "/captcha/hcaptcha",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "nopecha.com",
+        "path": "/favicon.ico",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "nopecha.com",
+        "path": "/js/demo/hcaptcha.js",
+        "count": 1,
+        "query_fields": [
+          "v"
+        ],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "nopecha.com",
+        "path": "/js/layout.js",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.cloudflareinsights.com",
+        "path": "/beacon.min.js/<opaque>",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      }
+    ],
+    "categorical": {},
+    "notes": []
+  },
+  {
+    "file": "nopecha-lemin.com.har",
+    "entries": 1,
+    "parse": "json",
+    "hosts": [
+      [
+        "nopecha.com",
+        1
+      ]
+    ],
+    "routes": [
+      {
+        "method": "GET",
+        "host": "nopecha.com",
+        "path": "/captcha/lemincaptcha",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      }
+    ],
+    "categorical": {},
+    "notes": []
+  },
+  {
+    "file": "nopecha-recaptcha-easy.com.har",
+    "entries": 28,
+    "parse": "json",
+    "hosts": [
+      [
+        "www.gstatic.com",
+        11
+      ],
+      [
+        "www.google.com",
+        10
+      ],
+      [
+        "nopecha.com",
+        2
+      ],
+      [
+        "fonts.gstatic.com",
+        2
+      ],
+      [
+        "api.nopecha.com",
+        2
+      ],
+      [
+        "static.cloudflareinsights.com",
+        1
+      ]
+    ],
+    "routes": [
+      {
+        "method": "GET",
+        "host": "www.gstatic.com",
+        "path": "/recaptcha/releases/<opaque>/recaptcha__pt_br.js",
+        "count": 6,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "www.gstatic.com",
+        "path": "/recaptcha/releases/<opaque>/styles__ltr.css",
+        "count": 3,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "fonts.gstatic.com",
+        "path": "/s/roboto/v48/<opaque>.woff2",
+        "count": 2,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "www.google.com",
+        "path": "/recaptcha/api.js",
+        "count": 2,
+        "query_fields": [
+          "render"
+        ],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "www.google.com",
+        "path": "/recaptcha/api2/anchor",
+        "count": 2,
+        "query_fields": [
+          "anchor-ms",
+          "ar",
+          "cb",
+          "co",
+          "execute-ms",
+          "hl",
+          "k",
+          "size",
+          "v"
+        ],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "www.google.com",
+        "path": "/recaptcha/api2/webworker.js",
+        "count": 2,
+        "query_fields": [
+          "hl",
+          "v"
+        ],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "www.gstatic.com",
+        "path": "/recaptcha/api2/logo_48.png",
+        "count": 2,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "POST",
+        "host": "api.nopecha.com",
+        "path": "/captcha/verify/recaptcha",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [
+          "token",
+          "type"
+        ],
+        "response_shape": [
+          "result",
+          "result.challenge_ts",
+          "result.error-codes",
+          "result.hostname",
+          "result.success",
+          "token"
+        ]
+      },
+      {
+        "method": "OPTIONS",
+        "host": "api.nopecha.com",
+        "path": "/captcha/verify/recaptcha",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "nopecha.com",
+        "path": "/captcha/recaptcha",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "nopecha.com",
+        "path": "/favicon.ico",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.cloudflareinsights.com",
+        "path": "/beacon.min.js/<opaque>",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "www.google.com",
+        "path": "/recaptcha/api2/bframe",
+        "count": 1,
+        "query_fields": [
+          "bft",
+          "hl",
+          "k",
+          "v"
+        ],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "POST",
+        "host": "www.google.com",
+        "path": "/recaptcha/api2/clr",
+        "count": 1,
+        "query_fields": [
+          "k"
+        ],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "POST",
+        "host": "www.google.com",
+        "path": "/recaptcha/api2/reload",
+        "count": 1,
+        "query_fields": [
+          "k"
+        ],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "POST",
+        "host": "www.google.com",
+        "path": "/recaptcha/api2/userverify",
+        "count": 1,
+        "query_fields": [
+          "k"
+        ],
+        "post_fields": [
+          "c",
+          "ch",
+          "ct",
+          "oc",
+          "pm",
+          "response",
+          "t",
+          "v"
+        ],
+        "response_shape": []
+      }
+    ],
+    "categorical": {
+      "size": [
+        "invisible",
+        "normal"
+      ]
+    },
+    "notes": []
+  },
+  {
+    "file": "nopecha-recaptcha-hard.com.har",
+    "entries": 69,
+    "parse": "lexical-recovery",
+    "hosts": [
+      [
+        "www.gstatic.com",
+        40
+      ],
+      [
+        "www.google.com",
+        21
+      ],
+      [
+        "nopecha.com",
+        5
+      ],
+      [
+        "fonts.gstatic.com",
+        2
+      ],
+      [
+        "static.cloudflareinsights.com",
+        1
+      ]
+    ],
+    "routes": [
+      {
+        "method": "?",
+        "host": "www.gstatic.com",
+        "path": "/recaptcha/releases/<opaque>/recaptcha__pt_br.js",
+        "count": 34
+      },
+      {
+        "method": "?",
+        "host": "www.google.com",
+        "path": "/recaptcha/api2/anchor",
+        "count": 10
+      },
+      {
+        "method": "?",
+        "host": "www.google.com",
+        "path": "/recaptcha/api.js",
+        "count": 8
+      },
+      {
+        "method": "?",
+        "host": "nopecha.com",
+        "path": "/captcha/recaptcha",
+        "count": 4
+      },
+      {
+        "method": "?",
+        "host": "www.gstatic.com",
+        "path": "/recaptcha/releases/<opaque>/styles__ltr.css",
+        "count": 4
+      },
+      {
+        "method": "?",
+        "host": "www.google.com",
+        "path": "/recaptcha/api2/webworker.js",
+        "count": 3
+      },
+      {
+        "method": "?",
+        "host": "www.gstatic.com",
+        "path": "/recaptcha/api2/logo_48.png",
+        "count": 2
+      },
+      {
+        "method": "?",
+        "host": "fonts.gstatic.com",
+        "path": "/s/roboto/v48/<opaque>.woff2",
+        "count": 2
+      },
+      {
+        "method": "?",
+        "host": "static.cloudflareinsights.com",
+        "path": "/beacon.min.js/<opaque>",
+        "count": 1
+      },
+      {
+        "method": "?",
+        "host": "nopecha.com",
+        "path": "/favicon.ico",
+        "count": 1
+      }
+    ],
+    "categorical": {},
+    "notes": [
+      "HAR JSON was malformed/truncated; lexical URL recovery only (JSONDecodeError)."
+    ]
+  },
+  {
+    "file": "nopecha-recaptcha-moderate.com.har",
+    "entries": 28,
+    "parse": "json",
+    "hosts": [
+      [
+        "www.gstatic.com",
+        11
+      ],
+      [
+        "www.google.com",
+        10
+      ],
+      [
+        "nopecha.com",
+        2
+      ],
+      [
+        "fonts.gstatic.com",
+        2
+      ],
+      [
+        "api.nopecha.com",
+        2
+      ],
+      [
+        "static.cloudflareinsights.com",
+        1
+      ]
+    ],
+    "routes": [
+      {
+        "method": "GET",
+        "host": "www.gstatic.com",
+        "path": "/recaptcha/releases/<opaque>/recaptcha__pt_br.js",
+        "count": 6,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "www.gstatic.com",
+        "path": "/recaptcha/releases/<opaque>/styles__ltr.css",
+        "count": 3,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "fonts.gstatic.com",
+        "path": "/s/roboto/v48/<opaque>.woff2",
+        "count": 2,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "www.google.com",
+        "path": "/recaptcha/api.js",
+        "count": 2,
+        "query_fields": [
+          "render"
+        ],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "www.google.com",
+        "path": "/recaptcha/api2/anchor",
+        "count": 2,
+        "query_fields": [
+          "anchor-ms",
+          "ar",
+          "cb",
+          "co",
+          "execute-ms",
+          "hl",
+          "k",
+          "size",
+          "v"
+        ],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "www.google.com",
+        "path": "/recaptcha/api2/webworker.js",
+        "count": 2,
+        "query_fields": [
+          "hl",
+          "v"
+        ],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "www.gstatic.com",
+        "path": "/recaptcha/api2/logo_48.png",
+        "count": 2,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "POST",
+        "host": "api.nopecha.com",
+        "path": "/captcha/verify/recaptcha",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [
+          "token",
+          "type"
+        ],
+        "response_shape": [
+          "result",
+          "result.challenge_ts",
+          "result.error-codes",
+          "result.hostname",
+          "result.success",
+          "token"
+        ]
+      },
+      {
+        "method": "OPTIONS",
+        "host": "api.nopecha.com",
+        "path": "/captcha/verify/recaptcha",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "nopecha.com",
+        "path": "/captcha/recaptcha",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "nopecha.com",
+        "path": "/favicon.ico",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.cloudflareinsights.com",
+        "path": "/beacon.min.js/<opaque>",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "www.google.com",
+        "path": "/recaptcha/api2/bframe",
+        "count": 1,
+        "query_fields": [
+          "bft",
+          "hl",
+          "k",
+          "v"
+        ],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "POST",
+        "host": "www.google.com",
+        "path": "/recaptcha/api2/clr",
+        "count": 1,
+        "query_fields": [
+          "k"
+        ],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "POST",
+        "host": "www.google.com",
+        "path": "/recaptcha/api2/reload",
+        "count": 1,
+        "query_fields": [
+          "k"
+        ],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "POST",
+        "host": "www.google.com",
+        "path": "/recaptcha/api2/userverify",
+        "count": 1,
+        "query_fields": [
+          "k"
+        ],
+        "post_fields": [
+          "c",
+          "ch",
+          "ct",
+          "oc",
+          "pm",
+          "response",
+          "t",
+          "v"
+        ],
+        "response_shape": []
+      }
+    ],
+    "categorical": {
+      "size": [
+        "invisible",
+        "normal"
+      ]
+    },
+    "notes": []
+  },
+  {
+    "file": "nopecha-turnstale.com.har",
+    "entries": 15,
+    "parse": "json",
+    "hosts": [
+      [
+        "challenges.cloudflare.com",
+        8
+      ],
+      [
+        "nopecha.com",
+        4
+      ],
+      [
+        "api.nopecha.com",
+        2
+      ],
+      [
+        "static.cloudflareinsights.com",
+        1
+      ]
+    ],
+    "routes": [
+      {
+        "method": "GET",
+        "host": "challenges.cloudflare.com",
+        "path": "/cdn-cgi/challenge-platform/h/b/turnstile/f/av0/rch/klnw2/<opaque>/auto/fbE/failure_retry/normal",
+        "count": 2,
+        "query_fields": [
+          "lang"
+        ],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "challenges.cloudflare.com",
+        "path": "/turnstile/v0/api.js",
+        "count": 2,
+        "query_fields": [
+          "onload"
+        ],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "challenges.cloudflare.com",
+        "path": "/turnstile/v0/b/8eb6d5cd556e/api.js",
+        "count": 2,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "POST",
+        "host": "api.nopecha.com",
+        "path": "/captcha/verify/turnstile",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [
+          "token",
+          "type"
+        ],
+        "response_shape": [
+          "result",
+          "result.error-codes",
+          "result.messages",
+          "result.success",
+          "token"
+        ]
+      },
+      {
+        "method": "OPTIONS",
+        "host": "api.nopecha.com",
+        "path": "/captcha/verify/turnstile",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "challenges.cloudflare.com",
+        "path": "/cdn-cgi/challenge-platform/h/b/turnstile/f/av0/rch/klnw2/<opaque>/auto/fbE/new/normal",
+        "count": 1,
+        "query_fields": [
+          "lang"
+        ],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "challenges.cloudflare.com",
+        "path": "/cdn-cgi/challenge-platform/h/b/turnstile/f/av0/rch/ovjme/<opaque>/auto/fbE/new/normal",
+        "count": 1,
+        "query_fields": [
+          "lang"
+        ],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "nopecha.com",
+        "path": "/captcha/turnstile",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "nopecha.com",
+        "path": "/favicon.ico",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "nopecha.com",
+        "path": "/js/demo/turnstile.js",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "nopecha.com",
+        "path": "/js/layout.js",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      },
+      {
+        "method": "GET",
+        "host": "static.cloudflareinsights.com",
+        "path": "/beacon.min.js/<opaque>",
+        "count": 1,
+        "query_fields": [],
+        "post_fields": [],
+        "response_shape": []
+      }
+    ],
+    "categorical": {},
+    "notes": []
+  }
+]

@@ -1,0 +1,188 @@
+openapi: 3.1.0
+info:
+  title: BerryShield API
+  version: 0.1.0
+  description: Adaptive anti-bot challenge and server-side verification API.
+servers:
+  - url: http://localhost:8080
+paths:
+  /healthz:
+    get:
+      operationId: health
+      responses:
+        '200': {description: Healthy}
+  /metrics:
+    get:
+      operationId: metrics
+      responses:
+        '200': {description: Prometheus text metrics}
+  /v1/challenge:
+    post:
+      operationId: issueChallenge
+      parameters:
+        - in: header
+          name: X-BerryShield-Site-Key
+          required: false
+          schema: {type: string}
+          description: Used by browser integrations/CORS plumbing; site_key in the body is authoritative.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {$ref: '#/components/schemas/ChallengeRequest'}
+      responses:
+        '200':
+          description: Adaptive decision
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/ChallengeResponse'}
+        '400': {description: Invalid request}
+        '403': {description: Origin/host policy or block decision}
+        '429': {description: Rate limited}
+  /v1/challenge/{id}/verify:
+    post:
+      operationId: verifyChallenge
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema: {type: string}
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [session_id,proof]
+              properties:
+                session_id: {type: string, minLength: 1, maxLength: 128}
+                proof: {$ref: '#/components/schemas/Proof'}
+      responses:
+        '200':
+          description: Proof accepted
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [success]
+                properties:
+                  success: {type: boolean}
+                  token: {type: string}
+        '400': {description: Invalid, expired, or consumed challenge}
+  /v1/siteverify:
+    post:
+      operationId: siteVerify
+      description: Server-to-server verification. A successful token is consumed.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {$ref: '#/components/schemas/SiteVerifyRequest'}
+          application/x-www-form-urlencoded:
+            schema: {$ref: '#/components/schemas/SiteVerifyRequest'}
+      responses:
+        '200':
+          description: Verification result
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/SiteVerifyResponse'}
+components:
+  schemas:
+    BehaviorSignals:
+      type: object
+      additionalProperties: false
+      required: [dwell_ms,pointer_events,pointer_distance,pointer_variance,key_events,key_interval_mean_ms,key_interval_std_ms,focus_transitions,visibility_changes]
+      properties:
+        dwell_ms: {type: integer}
+        pointer_events: {type: integer}
+        pointer_distance: {type: number}
+        pointer_variance: {type: number}
+        key_events: {type: integer}
+        key_interval_mean_ms: {type: number}
+        key_interval_std_ms: {type: number}
+        focus_transitions: {type: integer}
+        visibility_changes: {type: integer}
+    ClientSignals:
+      type: object
+      additionalProperties: false
+      required: [sdk_version,user_agent,platform,languages,timezone,screen_width_bucket,screen_height_bucket,color_depth,hardware_concurrency,device_memory_gb,max_touch_points,webdriver,secure_context,cookie_enabled,local_storage_ok,session_storage_ok,wasm_available,webcrypto_available,performance_jitter,behavior]
+      properties:
+        sdk_version: {type: string}
+        user_agent: {type: string}
+        platform: {type: string}
+        languages: {type: array, items: {type: string}}
+        timezone: {type: string}
+        screen_width_bucket: {type: integer}
+        screen_height_bucket: {type: integer}
+        color_depth: {type: integer}
+        hardware_concurrency: {type: integer}
+        device_memory_gb: {type: number}
+        max_touch_points: {type: integer}
+        webdriver: {type: boolean}
+        secure_context: {type: boolean}
+        cookie_enabled: {type: boolean}
+        local_storage_ok: {type: boolean}
+        session_storage_ok: {type: boolean}
+        webgl_vendor_hash: {type: string}
+        webgl_renderer_hash: {type: string}
+        wasm_available: {type: boolean}
+        wasm_mix: {type: integer, minimum: 0, maximum: 4294967295}
+        webcrypto_available: {type: boolean}
+        performance_jitter: {type: number}
+        behavior: {$ref: '#/components/schemas/BehaviorSignals'}
+    ChallengeRequest:
+      type: object
+      additionalProperties: false
+      required: [site_key,action,hostname,session_id,telemetry]
+      properties:
+        site_key: {type: string}
+        action: {type: string, pattern: '^[A-Za-z0-9_.:/-]{1,64}$'}
+        hostname: {type: string}
+        session_id: {type: string}
+        telemetry:
+          type: object
+          additionalProperties: false
+          required: [client]
+          properties:
+            client: {$ref: '#/components/schemas/ClientSignals'}
+    ChallengeResponse:
+      type: object
+      required: [decision]
+      properties:
+        decision: {type: string, enum: [allow,pow,interactive,block]}
+        challenge_id: {type: string}
+        kind: {type: string, enum: [pow,interactive]}
+        expires_at: {type: string, format: date-time}
+        params: {type: object, additionalProperties: true}
+        token: {type: string}
+    Proof:
+      type: object
+      additionalProperties: false
+      required: [kind]
+      properties:
+        kind: {type: string, enum: [pow,interactive]}
+        nonce: {type: integer, minimum: 0}
+        hold_ms: {type: integer, minimum: 0}
+        event_count: {type: integer, minimum: 0}
+        pointer_variance: {type: number, minimum: 0}
+    SiteVerifyRequest:
+      type: object
+      required: [secret,response,expected_action,expected_hostname]
+      properties:
+        secret: {type: string}
+        response: {type: string}
+        remoteip: {type: string}
+        expected_action: {type: string}
+        expected_hostname: {type: string}
+    SiteVerifyResponse:
+      type: object
+      required: [success,error-codes]
+      properties:
+        success: {type: boolean}
+        challenge_ts: {type: string, format: date-time}
+        hostname: {type: string}
+        action: {type: string}
+        risk_score: {type: integer, minimum: 0, maximum: 100}
+        risk_bucket: {type: string, enum: [low,medium,high,critical]}
+        challenge_kind: {type: string}
+        error-codes: {type: array, items: {type: string}}

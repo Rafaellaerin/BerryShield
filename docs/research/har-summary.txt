@@ -1,0 +1,185 @@
+
+## nopecha.com.har (38 entries, json)
+hosts: 00480ef49626.3058fb77.sa-east-1.token.awswaf.com (23), 00480ef49626.3058fb77.sa-east-1.captcha.awswaf.com (6), static.captcha.awswaf.com (4), nopecha.com (2), hiring.amazon.ca (2), static.cloudflareinsights.com (1)
+- POST 00480ef49626.3058fb77.sa-east-1.token.awswaf.com/00480ef49626/2d23d0e4897d/07353deb5ad1/report x8 fields=[] shape=[]
+- POST 00480ef49626.3058fb77.sa-east-1.token.awswaf.com/00480ef49626/2d23d0e4897d/07353deb5ad1/telemetry x8 fields=[] shape=[]
+- GET 00480ef49626.3058fb77.sa-east-1.captcha.awswaf.com/00480ef49626/2d23d0e4897d/07353deb5ad1/captcha.js x2 fields=[] shape=[]
+- GET 00480ef49626.3058fb77.sa-east-1.captcha.awswaf.com/00480ef49626/2d23d0e4897d/07353deb5ad1/problem x2 fields=['domain', 'kind', 'locale'] shape=[]
+- POST 00480ef49626.3058fb77.sa-east-1.captcha.awswaf.com/00480ef49626/2d23d0e4897d/07353deb5ad1/verify x2 fields=[] shape=[]
+- GET 00480ef49626.3058fb77.sa-east-1.token.awswaf.com/00480ef49626/2d23d0e4897d/07353deb5ad1/challenge.js x2 fields=[] shape=[]
+- GET 00480ef49626.3058fb77.sa-east-1.token.awswaf.com/00480ef49626/2d23d0e4897d/07353deb5ad1/inputs x2 fields=['client'] shape=['challenge', 'challenge.hmac', 'challenge.input', 'challenge.region', 'challenge_type', 'difficulty']
+- POST 00480ef49626.3058fb77.sa-east-1.token.awswaf.com/00480ef49626/2d23d0e4897d/07353deb5ad1/mp_verify x2 fields=['solution_data', 'solution_metadata'] shape=['inputs', 'token']
+- GET hiring.amazon.ca/application/api/candidate-application/update-application x2 fields=[] shape=[]
+- GET static.captcha.awswaf.com/fonts/AmazonEmberLt/AmazonEmber-Light.woff2 x2 fields=[] shape=[]
+- GET static.captcha.awswaf.com/fonts/AmazonEmberLt/stylesheet.css x2 fields=[] shape=[]
+- POST 00480ef49626.3058fb77.sa-east-1.token.awswaf.com/00480ef49626/2d23d0e4897d/07353deb5ad1/voucher x1 fields=[] shape=[]
+- GET nopecha.com/captcha/awscaptcha x1 fields=[] shape=[]
+- GET nopecha.com/favicon.ico x1 fields=[] shape=[]
+- GET static.cloudflareinsights.com/beacon.min.js/<opaque> x1 fields=[] shape=[]
+
+## nopecha-geetest.com.har (13 entries, json)
+hosts: static.geetest.com (7), nopecha.com (3), gcaptcha4.geetest.com (2), static.cloudflareinsights.com (1)
+categorical: {'client_type': ['web'], 'risk_type': ['slide']}
+- GET gcaptcha4.geetest.com/load x1 fields=['callback', 'captcha_id', 'challenge', 'client_type', 'lang', 'risk_type'] shape=[]
+- GET gcaptcha4.geetest.com/verify x1 fields=['callback', 'captcha_id', 'client_type', 'lot_number', 'payload', 'payload_protocol', 'process_token', 'pt', 'risk_type', 'w'] shape=[]
+- GET nopecha.com/captcha/geetest x1 fields=['nocache'] shape=[]
+- GET nopecha.com/favicon.ico x1 fields=[] shape=[]
+- GET nopecha.com/js/lib/gt4-v4.2.0.js x1 fields=[] shape=[]
+- GET static.cloudflareinsights.com/beacon.min.js/<opaque> x1 fields=[] shape=[]
+- GET static.geetest.com/captcha_v4/e70fbf1d77/slide/4b268eea89/2022-04-21T09/bg/<opaque>.png x1 fields=[] shape=[]
+- GET static.geetest.com/captcha_v4/e70fbf1d77/slide/4b268eea89/2022-04-21T09/slice/<opaque>.png x1 fields=[] shape=[]
+- GET static.geetest.com/v4/gct/gct4.5a2e755576738ba0499d714db4f1c9e0.js x1 fields=[] shape=[]
+- GET static.geetest.com/v4/static/v1.9.6-1db46d/css/gcaptcha4.css x1 fields=[] shape=[]
+- GET static.geetest.com/v4/static/v1.9.6-1db46d/css/sprite.png x1 fields=[] shape=[]
+- GET static.geetest.com/v4/static/v1.9.6-1db46d/i18n/eng.js x1 fields=[] shape=[]
+- GET static.geetest.com/v4/static/v1.9.6-1db46d/js/gcaptcha4.js x1 fields=[] shape=[]
+
+## nopecha-geetest1.com.har (30 entries, json)
+hosts: static.geetest.com (17), gcaptcha4.geetest.com (11), translation.opera-api.com (2)
+categorical: {'client_type': ['web'], 'risk_type': ['match']}
+- GET gcaptcha4.geetest.com/verify x6 fields=['callback', 'captcha_id', 'client_type', 'lot_number', 'payload', 'payload_protocol', 'process_token', 'pt', 'risk_type', 'w'] shape=[]
+- GET gcaptcha4.geetest.com/load x5 fields=['callback', 'captcha_id', 'client_type', 'lang', 'lot_number', 'payload', 'payload_protocol', 'process_token', 'pt', 'risk_type'] shape=[]
+- GET static.geetest.com/nerualpic/v4_test/v4_match_test/3d/3Dicon1.png x1 fields=[] shape=[]
+- GET static.geetest.com/nerualpic/v4_test/v4_match_test/3d/3Dicon2.png x1 fields=[] shape=[]
+- GET static.geetest.com/nerualpic/v4_test/v4_match_test/3d/3Dicon3.png x1 fields=[] shape=[]
+- GET static.geetest.com/nerualpic/v4_test/v4_match_test/3d/3Dicon4.png x1 fields=[] shape=[]
+- GET static.geetest.com/nerualpic/v4_test/v4_match_test/3d/3Dicon5.png x1 fields=[] shape=[]
+- GET static.geetest.com/nerualpic/v4_test/v4_match_test/3d/3Dicon6.png x1 fields=[] shape=[]
+- GET static.geetest.com/nerualpic/v4_test/v4_match_test/emoji/emoji2.png x1 fields=[] shape=[]
+- GET static.geetest.com/nerualpic/v4_test/v4_match_test/emoji/emoji3.png x1 fields=[] shape=[]
+- GET static.geetest.com/nerualpic/v4_test/v4_match_test/emoji/emoji4.png x1 fields=[] shape=[]
+- GET static.geetest.com/nerualpic/v4_test/v4_match_test/emoji/emoji5.png x1 fields=[] shape=[]
+- GET static.geetest.com/nerualpic/v4_test/v4_match_test/emoji/emoji6.png x1 fields=[] shape=[]
+- GET static.geetest.com/nerualpic/v4_test/v4_match_test/robot/robot_emoji_01.png x1 fields=[] shape=[]
+- GET static.geetest.com/nerualpic/v4_test/v4_match_test/robot/robot_emoji_02.png x1 fields=[] shape=[]
+
+## nopecha-geetest2.com.har (2 entries, json)
+hosts: static.geetest.com (1), gcaptcha4.geetest.com (1)
+categorical: {'client_type': ['web'], 'risk_type': ['icon']}
+- GET gcaptcha4.geetest.com/verify x1 fields=['callback', 'captcha_id', 'client_type', 'lot_number', 'payload', 'payload_protocol', 'process_token', 'pt', 'risk_type', 'w'] shape=[]
+- GET static.geetest.com/captcha_v4/policy/<opaque>/icon/292545/2026-08-11T13/<opaque>.jpg x1 fields=[] shape=[]
+
+## nopecha-geetest3.com.har (20 entries, json)
+hosts: static.geetest.com (14), nopecha.com (3), gcaptcha4.geetest.com (2), static.cloudflareinsights.com (1)
+categorical: {'client_type': ['web'], 'risk_type': ['winlinze']}
+- GET static.geetest.com/nerualpic/v4_test/v4_winlinze_test/img_winlinze_1.png x2 fields=[] shape=[]
+- GET static.geetest.com/nerualpic/v4_test/v4_winlinze_test/img_winlinze_2.png x2 fields=[] shape=[]
+- GET static.geetest.com/nerualpic/v4_test/v4_winlinze_test/img_winlinze_3.png x2 fields=[] shape=[]
+- GET static.geetest.com/nerualpic/v4_test/v4_winlinze_test/img_winlinze_4.png x2 fields=[] shape=[]
+- GET gcaptcha4.geetest.com/load x1 fields=['callback', 'captcha_id', 'challenge', 'client_type', 'lang', 'risk_type'] shape=[]
+- GET gcaptcha4.geetest.com/verify x1 fields=['callback', 'captcha_id', 'client_type', 'lot_number', 'payload', 'payload_protocol', 'process_token', 'pt', 'risk_type', 'w'] shape=[]
+- GET nopecha.com/captcha/geetest x1 fields=['nocache'] shape=[]
+- GET nopecha.com/favicon.ico x1 fields=[] shape=[]
+- GET nopecha.com/js/lib/gt4-v4.2.0.js x1 fields=[] shape=[]
+- GET static.cloudflareinsights.com/beacon.min.js/<opaque> x1 fields=[] shape=[]
+- GET static.geetest.com/nerualpic/v4_test/v4_winlinze_test/img_winlinze_0.png x1 fields=[] shape=[]
+- GET static.geetest.com/v4/gct/gct4.5a2e755576738ba0499d714db4f1c9e0.js x1 fields=[] shape=[]
+- GET static.geetest.com/v4/static/v1.9.6-1db46d/css/gcaptcha4.css x1 fields=[] shape=[]
+- GET static.geetest.com/v4/static/v1.9.6-1db46d/css/sprite.png x1 fields=[] shape=[]
+- GET static.geetest.com/v4/static/v1.9.6-1db46d/i18n/eng.js x1 fields=[] shape=[]
+
+## nopecha-geetest4.com.har (14 entries, json)
+hosts: static.geetest.com (8), nopecha.com (3), gcaptcha4.geetest.com (2), static.cloudflareinsights.com (1)
+categorical: {'client_type': ['web'], 'risk_type': ['nine']}
+- GET static.geetest.com/captcha_v4/policy/<opaque>/nine/292551/2026-08-11T13/<opaque>.jpg x2 fields=[] shape=[]
+- GET gcaptcha4.geetest.com/load x1 fields=['callback', 'captcha_id', 'challenge', 'client_type', 'lang', 'risk_type'] shape=[]
+- GET gcaptcha4.geetest.com/verify x1 fields=['callback', 'captcha_id', 'client_type', 'lot_number', 'payload', 'payload_protocol', 'process_token', 'pt', 'risk_type', 'w'] shape=[]
+- GET nopecha.com/captcha/geetest x1 fields=['nocache'] shape=[]
+- GET nopecha.com/favicon.ico x1 fields=[] shape=[]
+- GET nopecha.com/js/lib/gt4-v4.2.0.js x1 fields=[] shape=[]
+- GET static.cloudflareinsights.com/beacon.min.js/<opaque> x1 fields=[] shape=[]
+- GET static.geetest.com/nerualpic/v4_pic/nine_prompt/<opaque>.png x1 fields=[] shape=[]
+- GET static.geetest.com/v4/gct/gct4.5a2e755576738ba0499d714db4f1c9e0.js x1 fields=[] shape=[]
+- GET static.geetest.com/v4/static/v1.9.6-1db46d/css/gcaptcha4.css x1 fields=[] shape=[]
+- GET static.geetest.com/v4/static/v1.9.6-1db46d/css/sprite.png x1 fields=[] shape=[]
+- GET static.geetest.com/v4/static/v1.9.6-1db46d/i18n/eng.js x1 fields=[] shape=[]
+- GET static.geetest.com/v4/static/v1.9.6-1db46d/js/gcaptcha4.js x1 fields=[] shape=[]
+
+## nopecha-hcaptcha.com.har (30 entries, json)
+hosts: api.hcaptcha.com (11), imgs3.hcaptcha.com (6), newassets.hcaptcha.com (5), nopecha.com (4), js.hcaptcha.com (1), static.cloudflareinsights.com (1), 6ac26cb54e47.w.hcaptcha.com (1), 35e74101033b.w.hcaptcha.com (1)
+- GET imgs3.hcaptcha.com/tip/<opaque>/<opaque>.jpeg x6 fields=[] shape=[]
+- POST api.hcaptcha.com/getcaptcha/<opaque> x3 fields=[] shape=['c', 'c.req', 'c.type', 'key', 'normalized', 'oby', 'request_config', 'request_config.answer_type', 'request_config.cr_ss', 'request_config.ignore_case', 'request_config.keep_answers_order', 'request_config.max_length']
+- OPTIONS api.hcaptcha.com/getcaptcha/<opaque> x3 fields=[] shape=[]
+- POST api.hcaptcha.com/checkcaptcha/<opaque>/<opaque> x2 fields=['answers', 'c', 'clientOptions', 'e', 'job_mode', 'motionData', 'n', 'pdc', 'serverdomain', 'sitekey', 'v', 'ws'] shape=['c', 'c.req', 'c.type', 'expiration', 'generated_pass_UUID', 'pass']
+- OPTIONS api.hcaptcha.com/checkcaptcha/<opaque>/<opaque> x2 fields=[] shape=[]
+- GET newassets.hcaptcha.com/captcha/v1/<opaque>/static/hcaptcha.html x2 fields=[] shape=[]
+- GET 35e74101033b.w.hcaptcha.com/logo.png x1 fields=[] shape=[]
+- GET 6ac26cb54e47.w.hcaptcha.com/logo.png x1 fields=[] shape=[]
+- POST api.hcaptcha.com/checksiteconfig x1 fields=['host', 'sc', 'sitekey', 'spst', 'swa', 'v'] shape=['c', 'c.req', 'c.type', 'features', 'features.enc_get_req', 'pass']
+- GET js.hcaptcha.com/1/api.js x1 fields=[] shape=[]
+- GET newassets.hcaptcha.com/c/<opaque>/hsw.js x1 fields=[] shape=[]
+- GET newassets.hcaptcha.com/captcha/v1/<opaque>/challenge/image_label_area_select/challenge.js x1 fields=[] shape=[]
+- GET newassets.hcaptcha.com/captcha/v1/<opaque>/static/i18n/pt-BR.json x1 fields=[] shape=["'I am human' is now checked. You are verified", "'I am human', Select in order to trigger the challenge, or to bypass it if you have an accessibility cookie", 'A new SMS will open with a one time code for you to send.', 'About hCaptcha & Accessibility Options', 'Accessibility', 'Accessibility Challenge', 'Accessibility Cookie', 'Accessibility cookie is not set. {{retrieve-cookie}}', 'Accessibility cookie is set. For help, please email {{support}}', 'Accessibility: Retrieve Cookie', 'Back', 'Back to previous verification option']
+- GET nopecha.com/captcha/hcaptcha x1 fields=[] shape=[]
+- GET nopecha.com/favicon.ico x1 fields=[] shape=[]
+
+## nopecha-lemin.com.har (1 entries, json)
+hosts: nopecha.com (1)
+- GET nopecha.com/captcha/lemincaptcha x1 fields=[] shape=[]
+
+## nopecha-recaptcha-easy.com.har (28 entries, json)
+hosts: www.gstatic.com (11), www.google.com (10), nopecha.com (2), fonts.gstatic.com (2), api.nopecha.com (2), static.cloudflareinsights.com (1)
+categorical: {'size': ['invisible', 'normal']}
+- GET www.gstatic.com/recaptcha/releases/<opaque>/recaptcha__pt_br.js x6 fields=[] shape=[]
+- GET www.gstatic.com/recaptcha/releases/<opaque>/styles__ltr.css x3 fields=[] shape=[]
+- GET fonts.gstatic.com/s/roboto/v48/<opaque>.woff2 x2 fields=[] shape=[]
+- GET www.google.com/recaptcha/api.js x2 fields=['render'] shape=[]
+- GET www.google.com/recaptcha/api2/anchor x2 fields=['anchor-ms', 'ar', 'cb', 'co', 'execute-ms', 'hl', 'k', 'size', 'v'] shape=[]
+- GET www.google.com/recaptcha/api2/webworker.js x2 fields=['hl', 'v'] shape=[]
+- GET www.gstatic.com/recaptcha/api2/logo_48.png x2 fields=[] shape=[]
+- POST api.nopecha.com/captcha/verify/recaptcha x1 fields=['token', 'type'] shape=['result', 'result.challenge_ts', 'result.error-codes', 'result.hostname', 'result.success', 'token']
+- OPTIONS api.nopecha.com/captcha/verify/recaptcha x1 fields=[] shape=[]
+- GET nopecha.com/captcha/recaptcha x1 fields=[] shape=[]
+- GET nopecha.com/favicon.ico x1 fields=[] shape=[]
+- GET static.cloudflareinsights.com/beacon.min.js/<opaque> x1 fields=[] shape=[]
+- GET www.google.com/recaptcha/api2/bframe x1 fields=['bft', 'hl', 'k', 'v'] shape=[]
+- POST www.google.com/recaptcha/api2/clr x1 fields=['k'] shape=[]
+- POST www.google.com/recaptcha/api2/reload x1 fields=['k'] shape=[]
+
+## nopecha-recaptcha-hard.com.har (69 entries, lexical-recovery)
+hosts: www.gstatic.com (40), www.google.com (21), nopecha.com (5), fonts.gstatic.com (2), static.cloudflareinsights.com (1)
+- ? www.gstatic.com/recaptcha/releases/<opaque>/recaptcha__pt_br.js x34 fields=[] shape=[]
+- ? www.google.com/recaptcha/api2/anchor x10 fields=[] shape=[]
+- ? www.google.com/recaptcha/api.js x8 fields=[] shape=[]
+- ? nopecha.com/captcha/recaptcha x4 fields=[] shape=[]
+- ? www.gstatic.com/recaptcha/releases/<opaque>/styles__ltr.css x4 fields=[] shape=[]
+- ? www.google.com/recaptcha/api2/webworker.js x3 fields=[] shape=[]
+- ? www.gstatic.com/recaptcha/api2/logo_48.png x2 fields=[] shape=[]
+- ? fonts.gstatic.com/s/roboto/v48/<opaque>.woff2 x2 fields=[] shape=[]
+- ? static.cloudflareinsights.com/beacon.min.js/<opaque> x1 fields=[] shape=[]
+- ? nopecha.com/favicon.ico x1 fields=[] shape=[]
+note: HAR JSON was malformed/truncated; lexical URL recovery only (JSONDecodeError).
+
+## nopecha-recaptcha-moderate.com.har (28 entries, json)
+hosts: www.gstatic.com (11), www.google.com (10), nopecha.com (2), fonts.gstatic.com (2), api.nopecha.com (2), static.cloudflareinsights.com (1)
+categorical: {'size': ['invisible', 'normal']}
+- GET www.gstatic.com/recaptcha/releases/<opaque>/recaptcha__pt_br.js x6 fields=[] shape=[]
+- GET www.gstatic.com/recaptcha/releases/<opaque>/styles__ltr.css x3 fields=[] shape=[]
+- GET fonts.gstatic.com/s/roboto/v48/<opaque>.woff2 x2 fields=[] shape=[]
+- GET www.google.com/recaptcha/api.js x2 fields=['render'] shape=[]
+- GET www.google.com/recaptcha/api2/anchor x2 fields=['anchor-ms', 'ar', 'cb', 'co', 'execute-ms', 'hl', 'k', 'size', 'v'] shape=[]
+- GET www.google.com/recaptcha/api2/webworker.js x2 fields=['hl', 'v'] shape=[]
+- GET www.gstatic.com/recaptcha/api2/logo_48.png x2 fields=[] shape=[]
+- POST api.nopecha.com/captcha/verify/recaptcha x1 fields=['token', 'type'] shape=['result', 'result.challenge_ts', 'result.error-codes', 'result.hostname', 'result.success', 'token']
+- OPTIONS api.nopecha.com/captcha/verify/recaptcha x1 fields=[] shape=[]
+- GET nopecha.com/captcha/recaptcha x1 fields=[] shape=[]
+- GET nopecha.com/favicon.ico x1 fields=[] shape=[]
+- GET static.cloudflareinsights.com/beacon.min.js/<opaque> x1 fields=[] shape=[]
+- GET www.google.com/recaptcha/api2/bframe x1 fields=['bft', 'hl', 'k', 'v'] shape=[]
+- POST www.google.com/recaptcha/api2/clr x1 fields=['k'] shape=[]
+- POST www.google.com/recaptcha/api2/reload x1 fields=['k'] shape=[]
+
+## nopecha-turnstale.com.har (15 entries, json)
+hosts: challenges.cloudflare.com (8), nopecha.com (4), api.nopecha.com (2), static.cloudflareinsights.com (1)
+- GET challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/turnstile/f/av0/rch/klnw2/<opaque>/auto/fbE/failure_retry/normal x2 fields=['lang'] shape=[]
+- GET challenges.cloudflare.com/turnstile/v0/api.js x2 fields=['onload'] shape=[]
+- GET challenges.cloudflare.com/turnstile/v0/b/8eb6d5cd556e/api.js x2 fields=[] shape=[]
+- POST api.nopecha.com/captcha/verify/turnstile x1 fields=['token', 'type'] shape=['result', 'result.error-codes', 'result.messages', 'result.success', 'token']
+- OPTIONS api.nopecha.com/captcha/verify/turnstile x1 fields=[] shape=[]
+- GET challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/turnstile/f/av0/rch/klnw2/<opaque>/auto/fbE/new/normal x1 fields=['lang'] shape=[]
+- GET challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/turnstile/f/av0/rch/ovjme/<opaque>/auto/fbE/new/normal x1 fields=['lang'] shape=[]
+- GET nopecha.com/captcha/turnstile x1 fields=[] shape=[]
+- GET nopecha.com/favicon.ico x1 fields=[] shape=[]
+- GET nopecha.com/js/demo/turnstile.js x1 fields=[] shape=[]
+- GET nopecha.com/js/layout.js x1 fields=[] shape=[]
+- GET static.cloudflareinsights.com/beacon.min.js/<opaque> x1 fields=[] shape=[]
