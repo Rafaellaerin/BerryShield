@@ -10,13 +10,13 @@ Most modern bot defenses are not "an image CAPTCHA." They are pipelines: browser
 
 ### Implemented
 
-- **Go gateway** — challenge orchestration, hostname/origin policy, trusted-proxy IP extraction, rate limiting, HMAC-signed proof tokens with key-ID rotation support, one-time server verification, metrics.
-- **Rust risk engine** — optional isolated scorer with a Go fallback if it is unavailable.
-- **Python reputation service** — concurrent aggregation of local heuristics plus optional AbuseIPDB, IPQualityScore, and MaxMind Insights.
-- **TypeScript browser SDK** — privacy-reduced environment/behavior collection, adaptive execution, WebCrypto proof-of-work, accessible press-and-hold + low-cost work challenge.
-- **WebAssembly probe** — tiny deterministic client-side execution probe plus a Rust/WASM source crate.
-- **Red-team harness** — tests BerryShield itself for replay, origin mismatch, automation signals, malformed telemetry, and escalation behavior. It intentionally does **not** contain code for bypassing third-party CAPTCHA providers.
-- **HAR research tooling** — structural, sanitized analysis of the supplied CAPTCHA traces; values such as cookies, opaque challenge tokens, secrets, and payloads are not emitted.
+* **Go gateway** — challenge orchestration, hostname/origin policy, trusted-proxy IP extraction, rate limiting, HMAC-signed proof tokens with key-ID rotation support, one-time server verification, metrics.
+* **Rust risk engine** — optional isolated scorer with a Go fallback if it is unavailable.
+* **Python reputation service** — concurrent aggregation of local heuristics plus optional AbuseIPDB, IPQualityScore, and MaxMind Insights.
+* **TypeScript browser SDK** — privacy-reduced environment/behavior collection, adaptive execution, WebCrypto proof-of-work, accessible press-and-hold + low-cost work challenge.
+* **WebAssembly probe** — tiny deterministic client-side execution probe plus a Rust/WASM source crate.
+* **Red-team harness** — tests BerryShield itself for replay, origin mismatch, automation signals, malformed telemetry, and escalation behavior. It intentionally does **not** contain code for bypassing third-party CAPTCHA providers.
+* **HAR research tooling** — structural, sanitized analysis of the supplied CAPTCHA traces; values such as cookies, opaque challenge tokens, secrets, and payloads are not emitted.
 
 ## Architecture
 
@@ -54,7 +54,7 @@ Browser / App
               protected action
 ```
 
-See [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md), [`docs/THREAT_MODEL.md`](docs/THREAT_MODEL.md), and [`docs/RISK_ENGINE.md`](docs/RISK_ENGINE.md).
+See `docs/ARCHITECTURE.md`, `docs/THREAT_MODEL.md`, and `docs/RISK_ENGINE.md`.
 
 ## Quick start
 
@@ -62,10 +62,10 @@ See [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md), [`docs/THREAT_MODEL.md`](doc
 
 Requirements for the components you want to run:
 
-- Go 1.23+
-- Python 3.11+
-- Node.js 20+ / TypeScript 5+
-- Rust stable for the optional isolated scorer and Rust/WASM rebuild
+* Go 1.23+
+* Python 3.11+
+* Node.js 20+ / TypeScript 5+
+* Rust stable for the optional isolated scorer and Rust/WASM rebuild
 
 ```bash
 # 1) Reputation service (optional; local provider works without API keys)
@@ -96,8 +96,8 @@ cp .env.example .env
 docker compose up --build
 ```
 
-Demo: `http://localhost:3000`  
-Gateway: `http://localhost:8080`  
+Demo: `http://localhost:3000`
+Gateway: `http://localhost:8080`
 Metrics: `http://localhost:8080/metrics`
 
 ## Browser integration
@@ -134,12 +134,12 @@ A successful token is consumed. Reusing it returns `timeout-or-duplicate`.
 
 Default policy:
 
-| Risk | Decision | User impact |
-|---:|---|---|
-| 0–29 | `allow` | invisible/passive |
-| 30–61 | `pow` | WebCrypto computation |
-| 62–91 | `interactive` | accessible press-and-hold + low-cost PoW |
-| 92–100 | `block` | deny |
+|   Risk | Decision      | User impact                              |
+| -----: | ------------- | ---------------------------------------- |
+|   0–29 | `allow`       | invisible/passive                        |
+|  30–61 | `pow`         | WebCrypto computation                    |
+|  62–91 | `interactive` | accessible press-and-hold + low-cost PoW |
+| 92–100 | `block`       | deny                                     |
 
 Thresholds are per-site configuration and should be tuned with false-positive data, not intuition alone.
 
@@ -155,9 +155,9 @@ Thresholds are per-site configuration and should be tuned with false-positive da
 
 ## Research basis
 
-The supplied HARs showed several recurring architectural patterns: separate challenge acquisition and verification, short-lived/opaque state, client telemetry, challenge-specific request fields, and server-side token verification. The sanitized observations live in [`docs/research/HAR_OBSERVATIONS.md`](docs/research/HAR_OBSERVATIONS.md) and the machine-generated structural summaries in `docs/research/`.
+The supplied HARs showed several recurring architectural patterns: separate challenge acquisition and verification, short-lived/opaque state, client telemetry, challenge-specific request fields, and server-side token verification. The sanitized observations live in `docs/research/HAR_OBSERVATIONS.md` and the machine-generated structural summaries in `docs/research/`.
 
-The defensive bypass analysis maps public stealth-browser, cookie/session replay, request mirroring, proxy rotation, and TLS-fingerprint imitation techniques into **BerryShield red-team test cases**, not third-party bypass tooling. See [`docs/research/BYPASS_RESILIENCE.md`](docs/research/BYPASS_RESILIENCE.md).
+The defensive bypass analysis maps public stealth-browser, cookie/session replay, request mirroring, proxy rotation, and TLS-fingerprint imitation techniques into **BerryShield red-team test cases**, not third-party bypass tooling. See `docs/research/BYPASS_RESILIENCE.md`.
 
 ## Validate the repository
 
@@ -169,21 +169,21 @@ The script tests Go, Python, TypeScript/Node, and the prebuilt minimal WASM prob
 
 ## Documentation
 
-- [Architecture](docs/ARCHITECTURE.md)
-- [Integration guide](docs/INTEGRATION.md)
-- [Configuration](docs/CONFIGURATION.md)
-- [API](docs/API.md)
-- [Risk engine](docs/RISK_ENGINE.md)
-- [Threat model](docs/THREAT_MODEL.md)
-- [Red-team / blue-team plan](docs/RED_TEAM.md)
-- [Privacy](docs/PRIVACY.md)
-- [Operations and hardening](docs/OPERATIONS.md)
-- [Production checklist](docs/PRODUCTION_CHECKLIST.md)
-- [Validation report](docs/TEST_REPORT.md)
-- [HAR observations](docs/research/HAR_OBSERVATIONS.md)
-- [Bypass resilience](docs/research/BYPASS_RESILIENCE.md)
-- [Changelog](CHANGELOG.md)
+* [Architecture](docs/ARCHITECTURE.md)
+* [Integration guide](docs/INTEGRATION.md)
+* [Configuration](docs/CONFIGURATION.md)
+* [API](docs/API.md)
+* [Risk engine](docs/RISK_ENGINE.md)
+* [Threat model](docs/THREAT_MODEL.md)
+* [Red-team / blue-team plan](docs/RED_TEAM.md)
+* [Privacy](docs/PRIVACY.md)
+* [Operations and hardening](docs/OPERATIONS.md)
+* [Production checklist](docs/PRODUCTION_CHECKLIST.md)
+* [Validation report](docs/TEST_REPORT.md)
+* [HAR observations](docs/research/HAR_OBSERVATIONS.md)
+* [Bypass resilience](docs/research/BYPASS_RESILIENCE.md)
+* [Changelog](CHANGELOG.md)
 
 ## License and security reports
 
-MIT licensed. See [`SECURITY.md`](SECURITY.md) for coordinated disclosure guidance.
+Licensed under the GNU General Public License v3.0 (GPL-3.0). See `SECURITY.md` for coordinated disclosure guidance.
