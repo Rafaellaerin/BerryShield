@@ -23,5 +23,17 @@
     "dist",
     "README.md"
   ],
+  "keywords": [
+    "anti-bot",
+    "captcha",
+    "bot-detection",
+    "web-security",
+    "cybersecurity",
+    "abuse-prevention",
+    "proof-of-work",
+    "browser-security",
+    "adaptive-captcha",
+    "self-hosted"
+  ],
   "license": "GPL-3.0-only"
 }
