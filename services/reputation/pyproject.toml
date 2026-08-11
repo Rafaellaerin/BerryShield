@@ -3,6 +3,7 @@ name = "berryshield-reputation"
 version = "0.1.0"
 description = "BerryShield IP reputation aggregation service"
 requires-python = ">=3.11"
+license = "GPL-3.0-only"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
